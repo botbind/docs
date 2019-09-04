@@ -1,0 +1,23 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Developer documentation for Bot Bind addon developers.",
+  "main": "index.js",
+  "scripts": {
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BotBind/docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BotBind/docs/issues"
+  },
+  "homepage": "https://github.com/BotBind/docs#readme",
+  "dependencies": {
+    "vuepress": "^1.0.3"
+  }
+}
