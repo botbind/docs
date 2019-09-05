@@ -8,6 +8,7 @@ module.exports = {
       { text: "Main Site", link: "http://botbind.com" }
     ],
     sidebar: "auto",
+    sidebarDepth: 2,
     lastUpdated: true,
     repo: "botbind/docs",
     editLinks: true
