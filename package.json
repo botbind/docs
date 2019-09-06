@@ -4,7 +4,7 @@
   "description": "Developer documentation for Bot Bind addon developers.",
   "main": "index.js",
   "scripts": {
-    "build": "vuepress build docs",
+    "build": "vuepress build",
     "deploy": "gh-pages -d .vuepress/dist -m 'Automatically update gh-pages [skip ci]'"
   },
   "repository": {
