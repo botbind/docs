@@ -131,3 +131,7 @@ If you managed to follow along this far, you should see your bot online in Disco
 ![Discord](/assets/img/discord.jpg)
 
 Smile! you just created your first Bot Bind addon.
+
+## Submitting to Bot Bind
+
+So far you have made a simple addon that responds to a command. And made a bot that is used to test that addon and all the future addons you may create.
