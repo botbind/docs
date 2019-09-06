@@ -4,20 +4,22 @@
   "description": "Developer documentation for Bot Bind addon developers.",
   "main": "index.js",
   "scripts": {
-    "docs:build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d .vuepress/dist -m 'Automatically update gh-pages [skip ci]'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BotBind/docs.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bot Bind",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/BotBind/docs/issues"
   },
   "homepage": "https://github.com/BotBind/docs#readme",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "vuepress": "^1.0.3"
   }
 }

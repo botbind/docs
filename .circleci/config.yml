@@ -2,13 +2,33 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:4.8.2
+      - image: circleci/node:latest
     working_directory: ~/repo
     branches:
       only:
         - master
     steps:
       - checkout
-      - run: npm install
-      - run: npm run docs:build
-      - run: sh .circleci/push-gh-pages.sh .vuepress/dist
+      - restore_cache:
+          name: Restore NPM dependencies
+          keys:
+            - npm-{{ checksum "package.json" }}
+            - npm-
+      - run:
+          name: Install NPM dependencies
+          command: npm install
+      - save_cache:
+          name: Save NPM dependencies
+          paths:
+            - ./node_modules/
+          key: npm-{{ checksum "package.json" }}
+      - run:
+          name: Build
+          command: npm run docs:build
+      - run: |
+          git config --global user.name "$GH_NAME"
+          git config --global user.email "$GH_EMAIL"
+      - run: npm run build
+      - run:
+          name: Publish to GitHub Pages
+          command: npm run deploy
