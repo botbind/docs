@@ -17,5 +17,10 @@ module.exports = {
     repo: "botbind/docs",
     editLinks: true
   },
-  serviceWorker: true
+  serviceWorker: true,
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require("markdown-it-imsize"));
+    }
+  }
 };

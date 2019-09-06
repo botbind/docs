@@ -20,6 +20,7 @@
   "homepage": "https://github.com/BotBind/docs#readme",
   "dependencies": {
     "gh-pages": "^2.1.1",
+    "markdown-it-imsize": "^2.0.1",
     "vuepress": "^1.0.3"
   }
 }

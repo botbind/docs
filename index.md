@@ -2,8 +2,8 @@
 
 Bot Bind is not only a platform for creating Discord Bots, but also a community where server owners and addon developers benefit from each other.
 
-<img src="https://discord.js.org/static/logo.svg" width="150" height="100">
-<img src="https://klasa.js.org/static/klasa.svg" width="100" height="100">
+![discordjs](https://discord.js.org/static/logo.svg =150x100)
+![klasa](https://klasa.js.org/static/klasa.svg =100x100)
 
 Bot Bind uses a modified version of the powerful [Klasa](https://github.com/botbind/klasa) framework for discord.js to run the bots and the addons within it. The addon creation and submission process is quite simple and straight forward. We will guide through the process from start to the end.
 
@@ -132,6 +132,39 @@ If you managed to follow along this far, you should see your bot online in Disco
 
 Smile! you just created your first Bot Bind addon.
 
-## Submitting to Bot Bind
+## Submitting
 
 So far you have made a simple addon that responds to a command. And made a bot that is used to test that addon and all the future addons you may create.
+
+Now lets learn how you can submit your amazing addon to Bot Bind, where everyone can consume your great creation.
+
+Before starting, make sure you have a developer account with enough addon submissions available. You can sign up for a dev profile at [botbind.com/dev](http://botbind.com/dev).
+
+If you are good to go, lets start off with packing your addon as a tarball.
+
+1. Open your addon folder and pack it using npm.
+
+```
+cd path/to/my-first-addon
+npm pack
+```
+
+You should now have a **my-first-addon.tgz**, which is ready for uploading.
+
+2. Go to your Bot Bind developer profile page, and click on **New Addon**.
+
+![profile](/assets/img/profile.jpg)
+
+3. Fill in all the required fields, and click submit.
+4. In the addon manage page, go to the files page.
+5. Click on Add version, and fill out all the fields. Here you have to upload the tgz file we created.
+
+![profile](/assets/img/addon.jpg)
+
+Thats it, you have uploaded your very first addon to the bot bind addon storage.
+
+::: warning Do not publish your version
+If you are testing out the submissions process, only send a version for approval when you have developed something more useful.
+:::
+
+Feel free to explore the rest of the documentation to figure out where to go from here. You can join our [Discord server](https://discord.gg/asdasd) if you unsure about something.
