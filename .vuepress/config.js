@@ -13,6 +13,5 @@ module.exports = {
     repo: "botbind/docs",
     editLinks: true
   },
-  dest: "./docs",
   serviceWorker: true
 };

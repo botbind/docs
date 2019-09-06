@@ -1,18 +1,13 @@
 version: 2
 jobs:
-  deploy:
+  build:
     docker:
       - image: circleci/node:4.8.2
+    working_directory: ~/repo
+    branches:
+      only:
+        - master
     steps:
       - checkout
-      - deploy:
-          name: Deploy Release to GitHub
-          command: |
-            if [ $CIRCLE_BRANCH == 'master' ]; then
-              bash .circleci/deploy.sh
-            fi
-workflows:
-  version: 2
-  build:
-    jobs:
-      - deploy
+      - run: npm run docs:build
+      - run: sh .circleci/push-gh-pages.sh .vuepress/dist
