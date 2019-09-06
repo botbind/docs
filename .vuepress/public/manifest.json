@@ -1,0 +1,9 @@
+{
+  "name": "Bot Bind Docs",
+  "short_name": "Dev Docs",
+  "description": "Developer documentation for Bot Bind addon developers.",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#f15a29"
+}

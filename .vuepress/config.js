@@ -1,6 +1,13 @@
 module.exports = {
   title: "Developer Docs",
   description: "Developer documentation for Bot Bind addon developers.",
+  head: [
+    [
+      "link",
+      { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon.png" }
+    ],
+    ["link", { rel: "manifest", href: "/manifest.json" }]
+  ],
   themeConfig: {
     logo: "./assets/img/logo.png",
     nav: [
