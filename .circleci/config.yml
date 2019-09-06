@@ -9,5 +9,6 @@ jobs:
         - master
     steps:
       - checkout
+      - run: npm install
       - run: npm run docs:build
       - run: sh .circleci/push-gh-pages.sh .vuepress/dist
