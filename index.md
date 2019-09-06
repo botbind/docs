@@ -164,7 +164,7 @@ You should now have a **my-first-addon.tgz**, which is ready for uploading.
 Thats it, you have uploaded your very first addon to the bot bind addon storage.
 
 ::: warning Do not publish your version
-If you are testing out the submissions process, only send a version for approval when you have developed something more useful.
+Only send a version for approval when you have developed something more useful. You cannot delete an addon once its published.
 :::
 
 Feel free to explore the rest of the documentation to figure out where to go from here. You can join our [Discord server](https://discord.gg/asdasd) if you unsure about something.
