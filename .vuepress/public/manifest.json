@@ -2,8 +2,16 @@
   "name": "Bot Bind Docs",
   "short_name": "Dev Docs",
   "description": "Developer documentation for Bot Bind addon developers.",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",
+  "background_color": "#fff",
   "theme_color": "#f15a29"
 }
