@@ -23,8 +23,11 @@ jobs:
             - ./node_modules/
           key: npm-{{ checksum "package.json" }}
       - run:
-          name: Build
+          name: Build Docs
           command: npm run build
+      - run:
+          name: Add CNAME
+          command: echo 'docs.botbind.com' > .vuepress/dist/CNAME
       - run: |
           git config --global user.name "$GH_NAME"
           git config --global user.email "$GH_EMAIL"
