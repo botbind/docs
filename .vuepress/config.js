@@ -9,7 +9,7 @@ module.exports = {
     logo: "./assets/img/logo.png",
     nav: [
       { text: "Home", link: "/" },
-      { text: "Main Site", link: "http://botbind.com" }
+      { text: "Main Site", link: "https://botbind.com" }
     ],
     sidebar: "auto",
     sidebarDepth: 2,

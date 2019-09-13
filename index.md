@@ -15,7 +15,7 @@ All botbind bots run on NodeJS, and we currently only support Javascript for add
 
 - Any code editor (We recommend [VS Code](https://code.visualstudio.com))
 - NodeJS 10+ ([Download](https://nodejs.org/en/download))
-- Bot Bind Developer account ([Sign Up](http://botbind.com/dev))
+- Bot Bind Developer account ([Sign Up](https://botbind.com/dev))
 
 ## Setup Environment
 
@@ -138,7 +138,7 @@ So far you have made a simple addon that responds to a command. And made a bot t
 
 Now lets learn how you can submit your amazing addon to Bot Bind, where everyone can consume your great creation.
 
-Before starting, make sure you have a developer account with enough addon submissions available. You can sign up for a dev profile at [botbind.com/dev](http://botbind.com/dev).
+Before starting, make sure you have a developer account with enough addon submissions available. You can sign up for a dev profile at [botbind.com/dev](https://botbind.com/dev).
 
 If you are good to go, lets start off with packing your addon as a tarball.
 
