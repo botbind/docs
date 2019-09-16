@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "vuepress build",
+    "dev": "vuepress dev",
     "deploy": "gh-pages -d .vuepress/dist -m 'Automatically update gh-pages [skip ci]'"
   },
   "repository": {

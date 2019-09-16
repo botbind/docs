@@ -76,67 +76,13 @@ module.exports = class extends Command {
 };
 ```
 
-That's it, simple isn't it?
-
-## Testing
-
-We created a command, its nice and all. But how do we know if it works or not? Lets add it to a bot and find out.
-
-1. Create a new folder separate from all your addons. Name it **discord**.
-2. Open the **discord** folder in VSCode. Then right click on it and select **Open in Terminal**.
-3. Run these commands to setup the folder and install all the dependencies for the bot:
-
-```
-npm init -y
-npm i discordjs/discord.js @botbind/klasa
-```
-
-4. Create a new file called **index.js** in the bot folder.
-5. Open **index.js** and add this snippet of code:
-
-```js
-const { Client } = require("@botbind/klasa");
-
-new Client({
-  prefix: "!"
-}).login("your-bot-token");
-```
-
-6. Replace `your-bot-token` with your own Discord Application Bot token.
-
-Alrighty, now our discord.js bot is all ready to go. Now, lets install our newly created addon we just created to test.
-
-7.  Link your addon to your bot. Type this in the terminal (add your correct folder path):
-
-```
-npm link path/to/my-first-addon
-```
-
-Now, you should see my-first-addon in your bot's **package.json** file.
-
-8. Now you can call your addon in your bot. Open **index.js** and this before `new Client()`:
-
-```js
-Client.use(require("my-first-addon"));
-```
-
-9. Okay, now the final step: Execute this command to run your bot:
-
-```
-node index
-```
-
-If you managed to follow along this far, you should see your bot online in Discord. Open your bot's DM and type `!helloworld`. You should be greeted by a response.
-
-![Discord](/assets/img/discord.jpg)
-
-Smile! you just created your first Bot Bind addon.
+That's it, simple isn't it? You just created your first addon
 
 ## Submitting
 
-So far you have made a simple addon that responds to a command. And made a bot that is used to test that addon and all the future addons you may create.
+So far you have made a simple addon that responds to a command. Now lets learn how you can submit your amazing addon to Bot Bind, where everyone can consume your great creation.
 
-Now lets learn how you can submit your amazing addon to Bot Bind, where everyone can consume your great creation.
+If you are working on something more complex then what we did above, you may want to test how it works before submitting it. Please read about [testing your addon here](/testing).
 
 Before starting, make sure you have a developer account with enough addon submissions available. You can sign up for a dev profile at [botbind.com/dev](https://botbind.com/dev).
 

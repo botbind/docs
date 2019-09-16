@@ -11,11 +11,12 @@ module.exports = {
       { text: "Home", link: "/" },
       { text: "Main Site", link: "https://botbind.com" }
     ],
-    sidebar: "auto",
+    sidebar: ["/", "/testing"],
     sidebarDepth: 2,
     lastUpdated: true,
     repo: "botbind/docs",
-    editLinks: true
+    editLinks: true,
+    displayAllHeaders: true
   },
   serviceWorker: true,
   markdown: {
