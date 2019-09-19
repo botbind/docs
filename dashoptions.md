@@ -1,7 +1,7 @@
 # Dashboard Options
 
-Dashboard options lets a user control their bot easily using rich forms. 
-If your addon deals with presistent storage and configs, you can set up dashboard options to give users easy access to tweak them.
+Dashboard options lets a user control their bot easily using rich forms.
+If your addon deals with persistent storage and configs, you can set up dashboard options to give users easy access to tweak them.
 
 Dashboard options can be divided in 3 groups:
 
@@ -9,7 +9,7 @@ Dashboard options can be divided in 3 groups:
 - **Server Settings** - Per server settings, shows up on each server's settings page. e.g An option to setting the announcement channel.
 - **User Settings** - Per user setting, shows on each user's settings page. e.g An option to change the user's XP.
 
-You can implent dashboard options as long as you use the database to store data in your addons.
+You can implement dashboard options as long as you use the database to store data in your addons.
 You can only use these options to modify your addon's managed data.
 
 ## Syntax Guide
@@ -27,7 +27,7 @@ Use JSON to easily add form elements. Here is a simple example:
 
 ![DashOption1](/assets/img/dashoption1.jpg)
 
-This produces a simple option on the server settings page. But there are alot of options that you can use to modify the field.
+This produces a simple option on the server settings page. But there are a lot of options that you can use to modify the field.
 
 ### key
 
@@ -46,9 +46,9 @@ Default: `text`
 The type of field you want to use. You can choose between:
 
 - **text**: Simple text field.
-- **textarea**: Larger muti row field for text.
+- **textarea**: Larger muti-row field for text.
 - **select**: Drop down menu, to be used with [options](#options)
-- **array**: Mutiple text fields in an array.
+- **array**: Multiple text fields in an array.
 - **roles**: Dropdown automatically populated with the selected server's roles.
 - **channels**: Dropdown automatically populated with the selected server's channels.
 
