@@ -1,6 +1,7 @@
 # Dashboard Options
 
-Dashboard options lets a user control their bot easily using rich forms. If your bot deals with presistent storage and configs, you can set up dashboard options to give users easy access to tweak them.
+Dashboard options lets a user control their bot easily using rich forms. 
+If your addon deals with presistent storage and configs, you can set up dashboard options to give users easy access to tweak them.
 
 Dashboard options can be divided in 3 groups:
 
