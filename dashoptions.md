@@ -47,7 +47,8 @@ The type of field you want to use. You can choose between:
 
 - **text**: Simple text field.
 - **textarea**: Larger muti-row field for text.
-- **select**: Drop down menu, to be used with [options](#options)
+- **select**: Drop down menu, to be used with [options](#options).
+- **checkbox**: Show a single check box for boolean values.
 - **array**: Multiple text fields in an array.
 - **roles**: Dropdown automatically populated with the selected server's roles.
 - **channels**: Dropdown automatically populated with the selected server's channels.
@@ -64,7 +65,7 @@ Specify a label that you want to show you the form. If not specified, it uses th
 
 Type: `string`
 
-Text to show when the field value is empty.
+Text to show when the field value is empty. Also, used for checkbox text.
 
 ### options
 
