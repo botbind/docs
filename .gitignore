@@ -66,6 +66,3 @@ typings/
 
 # Serverless directories
 .serverless
-
-# Package.json
-package-lock.json
