@@ -12,7 +12,7 @@ Lets setup a local Discord bot and install our addon in it for testing.
 
 ```
 npm init -y
-npm i discordjs/discord.js @botbind/klasa
+npm i discordjs/discord.js#master @botbind/klasa
 ```
 
 4. Create a new file called **index.js** in the bot folder.
