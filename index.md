@@ -8,109 +8,88 @@ Bot Bind is not only a platform for creating Discord Bots, but also a community 
 Bot Bind uses a modified version of the powerful [Klasa](https://github.com/botbind/klasa) framework for discord.js to run the bots and the addons within it. The addon creation and submission process is quite simple and straight forward. We will guide through the process from start to the end.
 
 ::: tip But, what if I don't know Javascript?
-All botbind bots run on NodeJS, and we currently only support Javascript for addons.
+All Bot Bind bots run on NodeJS, and we currently only support Javascript for addons.
 :::
 
 ## Prerequisites
 
 - Any code editor (We recommend [VS Code](https://code.visualstudio.com))
 - NodeJS 10+ ([Download](https://nodejs.org/en/download))
+- Git ([Download](https://git-scm.com/downloads))
 - Bot Bind Developer account ([Sign Up](https://botbind.com/dev))
 
 ## Setup Environment
 
-1. First, lets create an empty folder somewhere called **Addons**. Then inside that folder, create a new folder, lets call it **my-first-addon**.
-2. Now lets open that folder in your favorite code editor. In this guide, we will use VS Code.
-3. In VS Code go to **File** > **Open Folder**. Then select the **Addons** folder. You should see the **my-first-addon** in the sidebar.
-4. Great, now right click on **my-first-addon** in the editor, and select **Open in terminal**.
-5. Check if you have NodeJS 10 or above by typing this in the terminal:
+1. First, create a working folder somewhere on your computer, call it **botbind**.
+2. Open your Command Prompt or Terminal and navigate to your working folder.
 
-```
-node --version
-```
-
-6. Finally, initialize your addon **package.json**
-
-```
-npm init -y
+```sh
+C:\Users\docs> cd Desktop
+C:\Users\docs\Desktop> cd botbind
+C:\Users\docs\Desktop\botbind>
 ```
 
-It will look something like this:
+It should look something like this, depends on where your folder is located.
 
-![VSCode](/assets/img/vscode.jpg)
+3. Using your terminal, install the necessary files:
 
-## Creating your first addon
+```sh
+# Clone repo from github
+git clone https://github.com/botbind/addon-development.git
 
-Lets create a tiny addon that responds to a bot command.
+# Go to the cloned folder
+cd addon-development
 
-1. Create a new file inside the **my-first-addon** folder. Name it **index.js**.
-2. Paste this snippet of code inside your **index.js**:
-
-```js
-const {
-  Client: { plugin }
-} = require("@botbind/klasa");
-
-module.exports = {
-  [plugin]() {
-    this.commands.registerCoreDirectory(`${__dirname}/`);
-  }
-};
+# install the dependencies
+npm install
 ```
 
-3. Now lets create a simple command for your addon. Create a folder called **commands**.
-4. Inside that folder, create another folder called **Awesome Addon**.
-
-![VSCode1](/assets/img/vscode1.jpg)
-
-5. And inside that folder, create a file called **helloworld.js**.
-6. Add this snippet of code to your **helloworld.js**.
-
-```js
-const { Command } = require("@botbind/klasa");
-
-module.exports = class extends Command {
-  run(msg) {
-    return msg.send(`Hi ${msg.author.username}!`);
-  }
-};
-```
-
-That's it, simple isn't it? You just created your first addon
-
-## Submitting
-
-So far you have made a simple addon that responds to a command. Now lets learn how you can submit your amazing addon to Bot Bind, where everyone can consume your great creation.
-
-If you are working on something more complex then what we did above, you may want to test how it works before submitting it. Please read about [testing your addon here](/testing).
-
-Before starting, make sure you have a developer account with enough addon submissions available. You can sign up for a dev profile at [botbind.com/dev](https://botbind.com/dev).
-
-If you are good to go, lets start off with packing your addon as a tarball.
-
-1. Open your addon folder and pack it using npm.
-
-```
-cd path/to/my-first-addon
-npm pack
-```
-
-You should now have a **my-first-addon.tgz**, which is ready for uploading.
-
-2. Go to your Bot Bind developer profile page, and click on **New Addon**.
-
-![profile](/assets/img/profile.jpg)
-
-3. Fill in all the required fields, and click submit.
-4. In the addon manage page, go to the files page.
-5. Click on Add version, and fill out all the fields. Here you have to upload the tgz file we created.
-
-![profile](/assets/img/addon.jpg)
-
-Thats it, you have uploaded your very first addon to the bot bind addon storage.
-
-::: warning Do not publish your version
-Only send a version for approval when you have developed something more useful. You cannot delete an addon once its published.
+::: warning Note
+If you get any errors after executing the commands above, make sure you have the [Prerequisites](#prerequisites) installed
 :::
+
+4. Once done, your directory structure to look similar to this:
+
+```
+.
+└── addon-development
+    ├── addons
+    │   └── my-first-addon
+    │       ├── commands
+    │       │   └── helloworld.js
+    │       ├── index.js
+    │       └── package.json
+    ├── bot.js
+    ├── package-lock.json
+    └── package.json
+```
+
+You are now ready to develop addons.
+
+## Testing your first addon
+
+1. Go to [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a new Application.
+2. Enable Bot in the application and copy the **Bot Token**.
+
+![DevPortal](/assets/img/devportal.png)
+
+::: warning
+Do not reuse the token you used to create a bot on botbind.com
+:::
+
+3. Open `bot.js` and replace your token that you got from Step 2.
+4. Invite the "Test bot" you created to a Discord server, and start the bot using the terminal:
+
+```sh
+node bot
+```
+
+::: warning Note
+If this gives you can error, make sure the terminal is in the `addon-development` folder.
+:::
+
+5. You should now see your bot online in Discord. Now go ahead and type in `?helloworld` to check if everything is working fine.
+
+![Discord](/assets/img/discord.png)
 
 Feel free to explore the rest of the documentation to figure out where to go from here. You can join our [Discord server](https://discordapp.com/invite/8y35DgW) if you unsure about something.

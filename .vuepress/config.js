@@ -11,7 +11,17 @@ module.exports = {
       { text: "Home", link: "/" },
       { text: "Main Site", link: "https://botbind.com" }
     ],
-    sidebar: ["/", "/testing", "/dashoptions"],
+    sidebar: [
+      "/",
+      "/submitting",
+      "/commands",
+      "/monitors",
+      "/events",
+      "/tasks",
+      "/languages",
+      "/database",
+      "/dashoptions"
+    ],
     sidebarDepth: 1,
     lastUpdated: true,
     repo: "botbind/docs",

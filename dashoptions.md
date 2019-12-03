@@ -19,8 +19,18 @@ Use JSON to easily add form elements. Here is a simple example:
 ```json
 [
   {
-    "key": "prefix",
-    "label": "Command Prefix"
+    "key": "roles.muted",
+    "type": "roles",
+    "label": "Muted Role"
+  },
+  {
+    "key": "filteredWords",
+    "type": "array",
+    "label": "Filtered Words",
+    "placeholder": "Enter a bad word",
+    "props": {
+      "required": true
+    }
   }
 ]
 ```
