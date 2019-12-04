@@ -44,7 +44,7 @@ Let's test it out:
 
 ## Command Options
 
-Klasa Commands can be customized to do pretty much anything you want. Here all the commands at once, you only have to add whichever ones you need to change:
+Klasa Commands can be customized to do pretty much anything you want. Here all the options at once, you only have to add whichever ones you need to change:
 
 ```js
 module.exports = class extends Command {
