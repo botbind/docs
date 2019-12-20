@@ -1,6 +1,6 @@
 # Creating Monitors
 
-Monitors are similar to commands, but instead of running on a command, they run on every message sent. There alot of useful cases for this feature.
+Monitors are similar to commands, but instead of running on a command, they run on every message sent. There a lot of useful cases for this feature.
 
 ## Your first Monitor
 
@@ -65,4 +65,4 @@ module.exports = class extends Monitor {
 };
 ```
 
-You can find all the different types of `allowedTypes` at [Discordjs Documentation](https://discord.js.org/#/docs/main/master/typedef/MessageType).
+You can find all the different types of `allowedTypes` at [Discord.js Documentation](https://discord.js.org/#/docs/main/master/typedef/MessageType).
