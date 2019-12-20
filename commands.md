@@ -4,9 +4,9 @@ Commands are the most essential part of any addon. Your addon is not complete wi
 
 ![Commands](/assets/img/commands1.png)
 
-## Your first command
+## Your first Command
 
-To create your a command:
+To create a command:
 
 1. Head to your addon folder and create a new folder called `commands`.
 2. Inside the commands folder, create a category folder. Let's call it `Test Commands`.
