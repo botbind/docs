@@ -21,6 +21,6 @@
   "homepage": "https://github.com/BotBind/docs#readme",
   "dependencies": {
     "markdown-it-imsize": "^2.0.1",
-    "vuepress": "^1.0.3"
+    "vuepress": "^1.4.0"
   }
 }
