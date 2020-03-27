@@ -8,7 +8,13 @@ If you are good to go, lets start off with packing your addon as a tarball.
 
 ## Packaging
 
-Open your addon folder and pack it using npm.
+First, we recommend formatting your code by running the following command in the current folder.
+
+```sh
+npm run prettier
+```
+
+Then open your addon folder and pack it using npm.
 
 ```sh
 cd botbind/addon-development/addons/my-first-addon
