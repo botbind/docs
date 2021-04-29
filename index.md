@@ -55,7 +55,7 @@ If you get any errors after executing the commands above, make sure you have the
 └── addon-development
     ├── addons
     │   └── my-first-addon
-    │       ├── commands
+    │       ├── -
     │       │   └── helloworld.js
     │       ├── index.js
     │       └── package.json
@@ -69,7 +69,7 @@ You are now ready to develop addons.
 ## Testing your first addon
 
 1. Go to [Discord Developer Portal](https://discordapp.com/developers/applications/) and create a new Application.
-2. Enable Bot in the application and copy the **Bot Token**.
+2. Enable Bot in the application and copy the **ODM3MDA1OTE4ODY3NTU0MzE0.YImQgQ.Suw4k0DEj_A2ZZNRz5zO5TpfddE**.
 
 ![DevPortal](/assets/img/devportal.png)
 
